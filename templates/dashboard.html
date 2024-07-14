@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <p>Welcome, {{username}}!</p>
+        <p>Quiz List</p>
+        <div class="quiz_list">
+          <form action="/link" method="post">
+            <input
+              type="hidden"
+              name="value"
+              value="https://opentdb.com/api.php?amount=50&category=9&type=multiple"
+            />
+            <input type="submit" value="GENERAL KNOWLEDGE" />
+          </form>
+          <form action="/link" method="post">
+            <input
+              type="hidden"
+              name="value"
+              value="https://opentdb.com/api.php?amount=50&category=21&type=multiple"
+            />
+            <input type="submit" value="SPORTS" />
+          </form>
+          <form action="/link" method="post">
+            <input
+              type="hidden"
+              name="value"
+              value="https://opentdb.com/api.php?amount=50&category=18&type=multiple"
+            />
+            <input type="submit" value="COMPUTER" />
+          </form>
+          <form action="/link" method="post">
+            <input
+              type="hidden"
+              name="value"
+              value="https://opentdb.com/api.php?amount=50&category=17&type=multiple"
+            />
+            <input type="submit" value="SCIENCE & NATURE" />
+          </form>
+          <form action="/link" method="post">
+            <input
+              type="hidden"
+              name="value"
+              value="https://opentdb.com/api.php?amount=50&category=23&type=multiple"
+            />
+            <input type="submit" value="HISTORY" />
+          </form>
+        </div>
+        <div class="btn">
+          <a href="previous_results"
+            ><input
+              type="submit"
+              name="login"
+              class="register_btn"
+              target="_blank"
+              value="Check Previous Results"
+          /></a>
+        </div>
+        <form action="/logout">
+          <div class="btn">
+            <input
+              type="submit"
+              name="logout"
+              class="register_btn"
+              value="Logout"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

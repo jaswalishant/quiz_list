@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="static/style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="timer"></div>
+        <h2>Quizz App</h2>
+        <form action="/result" id="submit" method="post">
+          <div class="question">
+            <ol type="numbers">
+              {%for i in range(length)%}
+              <li>
+                <p>{{decoded_question[i]}}</p>
+                {%for items in decoded_options[i]%}
+                <div class="answers">
+                  <label class="radio">
+                    <input
+                      type="radio"
+                      name="option{{i}}"
+                      value="{{items}}"
+                    />{{items}}
+                  </label>
+                  {%endfor%}
+                </div>
+                {%endfor%}
+              </li>
+            </ol>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="static/script.js"></script>
+  </body>
+</html>

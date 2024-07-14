@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correct Answers</title>
+    <link rel="stylesheet" href="static/style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h2>Correct Answers</h2>
+        <div class="question">
+          <ol type="numbers">
+            {%for i in range(length)%}
+            <li>
+              <p>{{decoded_question[i]}}</p>
+              <div class="answers"><span>Ans.</span> {{c_ans[i]}}</div>
+              {%endfor%}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

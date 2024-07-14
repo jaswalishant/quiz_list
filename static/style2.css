@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  float: left;
+  background: linear-gradient(62deg, #8ec5fc, #ac7dd8);
+  color: honeydew;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 90%;
+  font-size: 20px;
+  position: relative;
+}
+
+.row h2 {
+  font-size: 40px;
+}
+
+.row .question ol li {
+  margin: 20px;
+}
+
+.question .radio {
+  margin-top: 25px;
+}
+.question .radio input {
+  width: 15px;
+  height: 15px;
+}
+.question .radio:hover {
+  color: #56615a;
+  cursor: pointer;
+}
+
+.question p {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit input {
+  background-color: #8ec5fc;
+  border-radius: 20px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.timer {
+  width: 20%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  color: honeydew;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-size: 30px;
+}
