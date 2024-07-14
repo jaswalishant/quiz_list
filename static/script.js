@@ -8,7 +8,7 @@ setInterval(function () {
   sec = seconds % 60;
   sec = sec < 10 ? "0" + sec : sec;
   min = min < 10 ? "0" + min : min;
-  timer.innerHTML = `${min}:${sec}`;
+  timer.innerHTML = `Time remains : ${min}:${sec}`;
   seconds--;
 }, 1000);
 
